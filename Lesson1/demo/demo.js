@@ -20,3 +20,8 @@ if (regThis.test(s)) {
   let matches = s.match(reg4);
   if (matches) console.log(matches); //this,book
 }
+
+let reg2w = /(\w+)\s+\1/g;
+let str3 = "word word other talk talk";
+let matches = s.match(reg2w);
+if (matches) console.log(matches); //word word,talk talk
